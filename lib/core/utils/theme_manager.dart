@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import 'color_manager.dart';
 
@@ -8,7 +9,7 @@ abstract class ThemeManager {
     return ThemeData(
       brightness: Brightness.light,
       scaffoldBackgroundColor: ColorManager.lightBackground,
-      fontFamily: 'Poppins',
+      textTheme: GoogleFonts.cairoTextTheme(),
       appBarTheme: const AppBarTheme(
         backgroundColor: ColorManager.lightBackground,
         elevation: 0,
