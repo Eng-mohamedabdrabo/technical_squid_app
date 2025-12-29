@@ -1,5 +1,5 @@
 // DO NOT EDIT. This is code generated via package:intl/generate_localized.dart
-// This is a library that provides messages for a ar locale. All the
+// This is a library that provides messages for a zh locale. All the
 // messages from the main program should be duplicated here with the same
 // function name.
 
@@ -18,28 +18,26 @@ final messages = new MessageLookup();
 typedef String MessageIfAbsent(String messageStr, List<dynamic> args);
 
 class MessageLookup extends MessageLookupByLibrary {
-  String get localeName => 'ar';
+  String get localeName => 'zh';
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
-    "changeLanguage": MessageLookupByLibrary.simpleMessage("تغيير اللغة"),
-    "getStarted": MessageLookupByLibrary.simpleMessage("ابدأ الآن"),
-    "next": MessageLookupByLibrary.simpleMessage("التالي"),
+    "changeLanguage": MessageLookupByLibrary.simpleMessage("更改语言"),
+    "getStarted": MessageLookupByLibrary.simpleMessage("开始使用"),
+    "next": MessageLookupByLibrary.simpleMessage("下一步"),
     "onboardingSubTitle1": MessageLookupByLibrary.simpleMessage(
-      "حافظ على سيارتك في أفضل حالة مع خدمات الصيانة المتخصصة لدينا.",
+      "通过我们的专业维护服务，让您的车辆保持最佳状态。",
     ),
     "onboardingSubTitle2": MessageLookupByLibrary.simpleMessage(
-      "تتبع صحة سيارتك وسجل الصيانة في الوقت الفعلي.",
+      "实时追踪您的车辆健康状况和维护记录。",
     ),
     "onboardingSubTitle3": MessageLookupByLibrary.simpleMessage(
-      "وصول 24/7 إلى ميكانيكيين محترفين وطاقم دعم.",
+      "全天候获得专业技师和支持人员的帮助。",
     ),
-    "onboardingTitle1": MessageLookupByLibrary.simpleMessage(
-      "رعاية سيارات متميزة",
-    ),
-    "onboardingTitle2": MessageLookupByLibrary.simpleMessage("تتبع ذكي"),
-    "onboardingTitle3": MessageLookupByLibrary.simpleMessage("دعم الخبراء"),
-    "skip": MessageLookupByLibrary.simpleMessage("تخطي"),
+    "onboardingTitle1": MessageLookupByLibrary.simpleMessage("高级汽车护理"),
+    "onboardingTitle2": MessageLookupByLibrary.simpleMessage("智能追踪"),
+    "onboardingTitle3": MessageLookupByLibrary.simpleMessage("专家支持"),
+    "skip": MessageLookupByLibrary.simpleMessage("跳过"),
     "splashTitle": MessageLookupByLibrary.simpleMessage("Technical Squid"),
   };
 }

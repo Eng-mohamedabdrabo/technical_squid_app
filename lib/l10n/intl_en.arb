@@ -1,1 +1,13 @@
-{}
+{
+    "splashTitle": "Technical Squid",
+    "onboardingTitle1": "Premium Car Care",
+    "onboardingSubTitle1": "Keep your vehicle in top condition with our expert maintenance services.",
+    "onboardingTitle2": "Smart Tracking",
+    "onboardingSubTitle2": "Track your car's health and maintenance history in real-time.",
+    "onboardingTitle3": "Expert Support",
+    "onboardingSubTitle3": "24/7 access to professional mechanics and support staff.",
+    "skip": "Skip",
+    "next": "Next",
+    "getStarted": "Get Started",
+    "changeLanguage": "Change Language"
+}

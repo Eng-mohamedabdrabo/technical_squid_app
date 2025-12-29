@@ -1,1 +1,13 @@
-{}
+{
+    "splashTitle": "Technical Squid",
+    "onboardingTitle1": "رعاية سيارات متميزة",
+    "onboardingSubTitle1": "حافظ على سيارتك في أفضل حالة مع خدمات الصيانة المتخصصة لدينا.",
+    "onboardingTitle2": "تتبع ذكي",
+    "onboardingSubTitle2": "تتبع صحة سيارتك وسجل الصيانة في الوقت الفعلي.",
+    "onboardingTitle3": "دعم الخبراء",
+    "onboardingSubTitle3": "وصول 24/7 إلى ميكانيكيين محترفين وطاقم دعم.",
+    "skip": "تخطي",
+    "next": "التالي",
+    "getStarted": "ابدأ الآن",
+    "changeLanguage": "تغيير اللغة"
+}

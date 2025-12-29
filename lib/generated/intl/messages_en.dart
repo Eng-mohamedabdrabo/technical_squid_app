@@ -21,5 +21,25 @@ class MessageLookup extends MessageLookupByLibrary {
   String get localeName => 'en';
 
   final messages = _notInlinedMessages(_notInlinedMessages);
-  static Map<String, Function> _notInlinedMessages(_) => <String, Function>{};
+  static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+    "changeLanguage": MessageLookupByLibrary.simpleMessage("Change Language"),
+    "getStarted": MessageLookupByLibrary.simpleMessage("Get Started"),
+    "next": MessageLookupByLibrary.simpleMessage("Next"),
+    "onboardingSubTitle1": MessageLookupByLibrary.simpleMessage(
+      "Keep your vehicle in top condition with our expert maintenance services.",
+    ),
+    "onboardingSubTitle2": MessageLookupByLibrary.simpleMessage(
+      "Track your car\'s health and maintenance history in real-time.",
+    ),
+    "onboardingSubTitle3": MessageLookupByLibrary.simpleMessage(
+      "24/7 access to professional mechanics and support staff.",
+    ),
+    "onboardingTitle1": MessageLookupByLibrary.simpleMessage(
+      "Premium Car Care",
+    ),
+    "onboardingTitle2": MessageLookupByLibrary.simpleMessage("Smart Tracking"),
+    "onboardingTitle3": MessageLookupByLibrary.simpleMessage("Expert Support"),
+    "skip": MessageLookupByLibrary.simpleMessage("Skip"),
+    "splashTitle": MessageLookupByLibrary.simpleMessage("Technical Squid"),
+  };
 }

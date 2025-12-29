@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import 'color_manager.dart';
+import 'package:technical_squid_app/core/utils/color_manager.dart';
 
 abstract class ThemeManager {
   static ThemeData getAppTheme() {
