@@ -6,7 +6,7 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:technical_squid_app/core/localization/locale_cubit.dart';
 import 'package:technical_squid_app/core/localization/locale_state.dart';
 import 'package:technical_squid_app/core/utils/theme_manager.dart';
-import 'package:technical_squid_app/features/splash/presentation/views/splash_view.dart';
+import 'package:technical_squid_app/core/utils/app_router.dart';
 import 'package:technical_squid_app/generated/l10n.dart';
 
 void main() {
@@ -30,7 +30,7 @@ class TechnicalSquid extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocBuilder<LocaleCubit, LocaleState>(
       builder: (context, state) {
-        return MaterialApp(
+        return MaterialApp.router(
           debugShowCheckedModeBanner: false,
 
           locale: state.locale,
@@ -46,7 +46,7 @@ class TechnicalSquid extends StatelessWidget {
 
           theme: ThemeManager.getAppTheme(),
 
-          home: const SplashView(),
+          routerConfig: AppRouter.router,
         );
       },
     );

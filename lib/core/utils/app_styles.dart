@@ -5,14 +5,27 @@ abstract class AppStyles {
     fontSize: 10,
     fontWeight: FontWeight.w100,
   );
+  static const textStyle10Regular = TextStyle(
+    fontSize: 10,
+    fontWeight: FontWeight.w400,
+  );
   static const textStyle12Light = TextStyle(
     fontSize: 12,
     fontWeight: FontWeight.w200,
+  );
+  static const textStyle12Regular = TextStyle(
+    fontSize: 12,
+    fontWeight: FontWeight.w400,
   );
   static const textStyle14Medium = TextStyle(
     fontSize: 14,
     fontWeight: FontWeight.w400,
   );
+  static const textStyle14Regular = TextStyle(
+    fontSize: 14,
+    fontWeight: FontWeight.w400, // Regular usually w400, Medium w500.
+  );
+
   static const textStyle16Medium = TextStyle(
     fontSize: 16,
     fontWeight: FontWeight.w500,

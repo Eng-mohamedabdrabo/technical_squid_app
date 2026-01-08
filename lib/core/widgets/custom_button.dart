@@ -6,12 +6,14 @@ class CustomButton extends StatefulWidget {
   final String text;
   final VoidCallback onPressed;
   final bool isLoading;
+  final double? height; // Added height param
 
   const CustomButton({
     super.key,
     required this.text,
     required this.onPressed,
     this.isLoading = false,
+    this.height, // Optional
   });
 
   @override
@@ -53,13 +55,10 @@ class _CustomButtonState extends State<CustomButton>
         scale: _scaleAnimation,
         child: Container(
           width: double.infinity,
-          height: 56,
+          height: widget.height ?? 56, // Use param or default
           decoration: BoxDecoration(
             gradient: const LinearGradient(
-              colors: [
-                ColorManager.accent,
-                Color(0xFFC6A66B),
-              ], // Gold to Darker Gold
+              colors: [ColorManager.accent, Color(0xFFC6A66B)],
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
             ),
@@ -73,12 +72,18 @@ class _CustomButtonState extends State<CustomButton>
             ],
           ),
           alignment: Alignment.center,
+          padding: const EdgeInsets.symmetric(
+            horizontal: 8,
+          ), // Padding to prevent text touching edges
           child: widget.isLoading
               ? const CircularProgressIndicator(color: Colors.white)
-              : Text(
-                  widget.text,
-                  style: AppStyles.textStyle18SemiBold.copyWith(
-                    color: Colors.white,
+              : FittedBox(
+                  fit: BoxFit.scaleDown,
+                  child: Text(
+                    widget.text,
+                    style: AppStyles.textStyle18SemiBold.copyWith(
+                      color: Colors.white,
+                    ),
                   ),
                 ),
         ),

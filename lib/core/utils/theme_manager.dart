@@ -15,7 +15,7 @@ abstract class ThemeManager {
         elevation: 0,
         centerTitle: true,
         systemOverlayStyle: SystemUiOverlayStyle(
-          statusBarColor: ColorManager.lightCard,
+          statusBarColor: ColorManager.lightBackground,
           statusBarIconBrightness: Brightness.dark,
         ),
       ),
